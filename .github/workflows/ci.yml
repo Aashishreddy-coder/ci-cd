@@ -20,5 +20,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      -name: Run Docker
+       run: docker build -t ci-app .   
+
       - name: Run tests
         run: echo "CI BUILD SUCCESS"
